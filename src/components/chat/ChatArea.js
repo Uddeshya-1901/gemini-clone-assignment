@@ -107,7 +107,13 @@ const ChatArea = ({ chatroom }) => {
     ) {
       handleLoadMore();
     }
-  }, [chatroom, chatroomMessages.length, hasMoreMessages, handleLoadMore]);
+  }, [
+    chatroom,
+    chatroomMessages.length,
+    hasMoreMessages,
+    handleLoadMore,
+    isNewlyCreatedChatroom,
+  ]);
 
   // Helper function to check if this is a newly created empty chatroom
   const isNewlyCreatedChatroom = (chatroom) => {
