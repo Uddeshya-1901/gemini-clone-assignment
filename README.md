@@ -2,7 +2,7 @@
 
 A fully functional, responsive, and visually appealing frontend for a Gemini-style conversational AI chat application built with React and Redux.
 
-## 🚀 Features
+## Features
 
 ### Authentication
 
@@ -39,7 +39,7 @@ A fully functional, responsive, and visually appealing frontend for a Gemini-sty
 - **Toast Notifications** system
 - **LocalStorage Persistence** for auth and chat data
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: React 18
 - **State Management**: Redux Toolkit
@@ -49,7 +49,7 @@ A fully functional, responsive, and visually appealing frontend for a Gemini-sty
 - **Icons**: Lucide React
 - **Build Tool**: Create React App
 
-## 📦 Installation
+## Installation
 
 1. **Clone the repository**
 
@@ -74,7 +74,7 @@ A fully functional, responsive, and visually appealing frontend for a Gemini-sty
    - The app will automatically open at `http://localhost:3000`
    - If port 3000 is occupied, it will prompt to use another port
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -109,7 +109,7 @@ src/
 └── App.js                # Main application component
 ```
 
-## 🔧 Key Features Implementation
+## Key Features Implementation
 
 ### Redux Store Architecture
 
@@ -138,7 +138,7 @@ All forms use React Hook Form with Zod schemas for robust validation:
 - Efficient re-renders with proper Redux state structure
 - Lazy loading of message history with pagination
 
-## 🎯 Usage Guide
+## Usage Guide
 
 ### Authentication Flow
 
@@ -167,7 +167,7 @@ All forms use React Hook Form with Zod schemas for robust validation:
 2. **Logout**: Click the logout icon to sign out
 3. **Notifications**: Toast messages appear for all important actions
 
-## 🎨 Customization
+## Customization
 
 ### Styling
 
@@ -194,58 +194,8 @@ Form validation rules are defined in `src/lib/validations.js` using Zod schemas.
 - OTP length and format
 - Chatroom name constraints
 
-## 🚀 Deployment
+## Deployment
 
 The app is ready for deployment on platforms like Vercel or Netlify:
 
-1. **Build the project**
 
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to Vercel**
-
-   ```bash
-   npm install -g vercel
-   vercel --prod
-   ```
-
-3. **Deploy to Netlify**
-   - Drag and drop the `build` folder to Netlify
-   - Or connect your Git repository for automatic deployments
-
-## 🧪 Testing
-
-The project includes basic testing setup with React Testing Library:
-
-```bash
-npm test
-```
-
-## 📝 Environment Variables
-
-No environment variables are required for the demo version. For production:
-
-- Replace the mock OTP service with a real SMS provider
-- Add environment variables for API endpoints
-- Configure proper authentication endpoints
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new features
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- **restcountries.com** for country data API
-- **Lucide React** for beautiful icons
-- **Tailwind CSS** for utility-first styling
-- **Redux Toolkit** for efficient state management
