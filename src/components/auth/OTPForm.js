@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowLeft, Shield } from "lucide-react";
 import { Button } from "../ui/Button";
-import { Input } from "../ui/Input";
 import { LoadingSpinner } from "../ui/Loading";
 import { otpSchema } from "../../lib/validations";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
