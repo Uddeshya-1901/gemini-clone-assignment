@@ -66,6 +66,14 @@ const ChatArea = ({ chatroom }) => {
     }
   };
 
+  // Helper function to check if this is a newly created empty chatroom
+  const isNewlyCreatedChatroom = (chatroom) => {
+    if (!chatroom) return false;
+    const chatroomAge = Date.now() - new Date(chatroom.createdAt).getTime();
+    // Consider chatroom new if it's less than 10 seconds old and has no messages
+    return chatroomAge < 10000 && chatroomMessages.length === 0;
+  };
+
   const handleLoadMore = useCallback(async () => {
     if (!chatroom || loadingMore || !hasMoreMessages[chatroom.id]) return;
 
@@ -114,14 +122,6 @@ const ChatArea = ({ chatroom }) => {
     handleLoadMore,
     isNewlyCreatedChatroom,
   ]);
-
-  // Helper function to check if this is a newly created empty chatroom
-  const isNewlyCreatedChatroom = (chatroom) => {
-    if (!chatroom) return false;
-    const chatroomAge = Date.now() - new Date(chatroom.createdAt).getTime();
-    // Consider chatroom new if it's less than 10 seconds old and has no messages
-    return chatroomAge < 10000 && chatroomMessages.length === 0;
-  };
 
   // Auto-resize textarea
   useEffect(() => {
