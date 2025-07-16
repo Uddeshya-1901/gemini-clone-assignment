@@ -115,7 +115,13 @@ const ChatArea = ({ chatroom }) => {
     ) {
       handleLoadMore();
     }
-  }, [chatroom, chatroomMessages.length, hasMoreMessages, handleLoadMore]);
+  }, [
+    chatroom,
+    chatroomMessages.length,
+    hasMoreMessages,
+    handleLoadMore,
+    isNewlyCreatedChatroom,
+  ]);
 
   // Auto-resize textarea
   useEffect(() => {
