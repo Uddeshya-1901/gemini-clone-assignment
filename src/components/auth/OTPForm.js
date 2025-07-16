@@ -19,7 +19,6 @@ const OTPForm = ({ phone, onBack }) => {
     handleSubmit,
     formState: { errors },
     setValue,
-    trigger,
   } = useForm({
     resolver: zodResolver(otpSchema),
     defaultValues: {
