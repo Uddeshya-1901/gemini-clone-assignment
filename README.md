@@ -196,6 +196,8 @@ Form validation rules are defined in `src/lib/validations.js` using Zod schemas.
 
 ## Deployment
 
-The app is ready for deployment on platforms like Vercel or Netlify:
+The app has been deployed on Netlify, The URL for the application is:
+https://gemini-clone-assignment1.netlify.app/
+
 
 
